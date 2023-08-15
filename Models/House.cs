@@ -36,9 +36,9 @@ public class House : BaseBuilding
         return retVal.ConvertAll(x => (T)x);
     }
 
-    public IList<House> GetHouses()
+    public IList<House> GetGarages()
     {
-        return this.GetPropertyBuildingsOfType<House>(BuildingType.House);
+        return this.GetPropertyBuildingsOfType<Garage>(BuildingType.Garage);
     }
 
     public IList<Shed> GetSheds()
